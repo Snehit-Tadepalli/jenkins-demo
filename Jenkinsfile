@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'git clone https://github.com/Snehit-Tadepalli/jenkins-demo.git'
-        sh 'script.sh'
+        sh 'bash script.sh'
       }
     }
     stage('After build') {
