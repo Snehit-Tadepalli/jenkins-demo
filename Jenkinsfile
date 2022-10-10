@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        git 'https://github.com/Snehit-Tadepalli/jenkins-demo'
+        sh 'git clone https://github.com/Snehit-Tadepalli/jenkins-demo.git'
         sh 'script.sh'
       }
     }
